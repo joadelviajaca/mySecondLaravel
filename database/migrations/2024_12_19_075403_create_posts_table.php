@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('title'); // Campo de tipo string
-            $table->text('body')->nullable(); // Campo de texto, puede ser nulo
+            $table->text('body'); // Campo de texto, puede ser nulo
             $table->timestamps();
         });
     }
